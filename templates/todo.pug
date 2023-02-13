@@ -1,8 +1,5 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  title Todo List
-  link(rel='stylesheet' href='resources/css/todo.css')
-  script(src='resources/js/addItem.js' defer='')
-div#addForm
-    button(type="button" id="addButton") Add item
+extends layout.pug
+
+block deleteForm
+  form(action="/deleteTodo" method="POST") 
+    button.todoButton(id="deleteButton" name="buttonId" value=row.todo_id) Delete

@@ -1,0 +1,233 @@
+.header {
+    position: fixed;
+    background-color: #75C9B7;
+    padding: 20px;
+    width: 100%;
+    z-index: 1000;
+    text-align: inline-block;
+
+}
+
+#searchBar {
+    margin-left: 22%;
+}
+
+.searchText {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#searchText {
+    background-color: #9ccac0;
+    border: solid;
+    border-right: hidden;
+    margin-top: 0.5em;
+    vertical-align: middle;
+    height: 2em;
+    padding: .5em;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+#searchText:focus {
+    outline: none;
+}
+
+
+.searchIcon {
+    display: inline-block;
+    margin-top: 0.4em;
+    vertical-align: middle;
+}
+
+
+#searchIcon {
+    width: 2.17em;
+    height: 2.17em;
+    background-color: #9ccac0;
+    vertical-align: middle;
+    border: solid;
+    padding: .4em;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+#searchIcon:hover {
+    background-color: #53c7ae;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 20%;
+    background-color: #FFE26A;
+    position: fixed;
+    text-align: center;
+    padding-top: 6.6em;
+    font-style: times, sans-serif;
+}
+
+.sidebar a {
+    display: block;
+    padding: 2em;
+    margin: 0;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+}
+
+.sidebar a:hover {
+    margin: 0;
+    background-color: #ffd21c; 
+}
+
+.sidebar h2 {
+    margin-bottom: 1.5em;
+}
+
+.allItems {
+    padding-top: 8em;
+}
+
+.todoItem {
+    margin-left: 25%;
+    margin-right: 5%;
+    background-color: #C7DDCC;
+    border-radius: 2em;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 15%;
+}
+
+.content {
+    flex: 65%;
+    white-space: pre-line;
+    word-break: break-word;
+    flex-wrap: wrap;
+}
+
+.content h3 {
+    font-size: 1.2em;
+    font-family: serif;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.content h4 {
+    font-size: 1em;
+    font-family: serif;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    font-weight: normal;
+}
+
+.date {
+    margin-top: 0.4em;
+}
+
+.delete {
+    flex: 15%;
+    margin-right: 5%;
+}
+
+#filterForm {
+    padding-top: 6em;
+    margin-left: 30%;
+}
+
+body, html {
+    background-color: #ABD699;
+    margin: 0;
+    padding: 0;
+}
+
+#addForm {
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
+.todoButton {
+    background-color: #C7DDCC;
+    border-style: solid;
+    border-radius: .5em;
+}
+
+#completeButton {
+    color: #005700;
+    border-color: #005700;
+}
+
+#incompleteButton {
+    color: #494949;
+    border-color: #494949;
+}
+
+#deleteButton {
+    margin-left: 90%;
+    color: #9b0000;
+    border-color: #9b0000
+}
+
+#addTodo {
+    border-radius: 3em;
+    border-style: solid;
+    background-color: #9bad9f;
+    border-color: #9bad9f;
+}
+
+#inputForm {
+    margin-right: 7%;
+    background-color: #C7DDCC;
+    border-radius: 2em;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#inputForm input {
+    margin-left: 7%;
+}
+
+#inputForm input[type=text] {
+    align-content: justify;
+    background-color: #C7DDCC;
+    border-color: #C7DDCC;
+    border-style: solid;
+    margin-bottom: 0.2em;
+}
+
+#inputForm input[type=text]:focus {
+    outline: none;
+}
+
+#inputForm input[type=date] {
+    align-content: justify;
+    background-color: #C7DDCC;
+    border-color: #C7DDCC;
+    border-style: solid;
+    margin-bottom: 0.2em;
+}
+
+#inputForm input[type=date]:focus {
+    outline: none;
+}
+
+#submitButton {
+    background-color: #C7DDCC;
+    border-style: solid;
+    border-radius: .5em;
+    margin-top: .4em;
+    color: #006580;
+    border-color: #006580;
+}

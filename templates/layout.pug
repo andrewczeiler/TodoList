@@ -1,0 +1,37 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Todo List
+  link(rel='stylesheet' href='resources/css/todo.css')
+  script(src='resources/js/todo.js' defer='')
+div.header
+  form#searchBar(action="/search" method="POST")
+    div.searchText
+      input#searchText(type="text" name="search" placeholder="Search todo..")
+    div.searchIcon
+      input#searchIcon(type="image" src="/resources/images/search_icon.png" alt="Search icon")
+nav.sidebar
+  h2 Filter Options
+  a(href='/todo') All Items
+  a(href='/inProgress') In Progress
+  a(href='/complete') Complete
+div.allItems
+  for row in list
+    div.todoItem(data-id=row.todo_id)
+      div.status
+        if row.is_resolved == 0
+          button.todoButton(id="incompleteButton" onclick="changeStatus(" + row.todo_id + " , 1)" data-id=row.todo_id) In Progress
+        else
+          button.todoButton(id="completeButton" onclick="changeStatus(" + row.todo_id + " , 0)" data-id=row.todo_id) Complete
+      div.content
+        div.title 
+          h3 
+            span #{row.todo_name}
+        div.description 
+          h4 
+            span #{row.todo_description}
+        div.date #{row.todo_date}
+      div.delete
+        block deleteForm
+div#addForm
+    button#addTodo(type="button") +

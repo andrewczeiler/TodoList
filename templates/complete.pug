@@ -1,5 +1,5 @@
 extends layout.pug
 
 block deleteForm
-  form(action="/deleteInProgress" method="POST") 
+  form(action="/deleteComplete" method="POST") 
     button.todoButton(id="deleteButton" name="buttonId" value=row.todo_id) Delete
